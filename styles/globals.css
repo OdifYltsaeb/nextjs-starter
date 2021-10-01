@@ -1,0 +1,19 @@
+@import './font.css';
+@import './misc.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#__next {
+    height: 100%;
+    @apply flex;
+    @apply flex-col;
+}

@@ -1,0 +1,24 @@
+.navbar {
+    nav {
+        margin-left: 8rem;
+
+        a {
+            &:after {
+                content: '';
+                @apply border-b-4 border-solid border-black;
+                @apply w-0;
+                @apply absolute bottom-0 right-0 left-0;
+                @apply -m-1;
+                @apply transition-all;
+            }
+
+            &.active {
+                @apply text-black;
+
+                &:after {
+                    @apply w-full;
+                }
+            }
+        }
+    }
+}
